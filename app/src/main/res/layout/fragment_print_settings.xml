@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_allow_printing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_allow_printing"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_allow_printing"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_allow_printing"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_qr_correction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_allow_printing">
+
+                <TextView
+                    android:id="@+id/tv_qr_correction"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_qr_correction"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/sp_qr_correction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_qr_correction"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Spinner>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_kkt_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_qr_correction">
+
+                <TextView
+                    android:id="@+id/tv_print_kkt_number"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_kkt_number"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_print_kkt_number"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_full_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_print_kkt_number">
+
+                <TextView
+                    android:id="@+id/tv_print_full_payment"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_full_payment"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_print_full_payment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_payment_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_print_full_payment">
+
+                <TextView
+                    android:id="@+id/tv_print_payment_subject"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_payment_subject"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/sp_print_payment_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_print_payment_subject"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Spinner>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_ofd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_print_payment_subject">
+
+                <TextView
+                    android:id="@+id/tv_print_ofd_name"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_ofd_name"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_print_ofd_name"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_print_ofd_name">
+
+                <TextView
+                    android:id="@+id/tv_print_email"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_email"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_print_email"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_print_vendor_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_print_email">
+
+                <TextView
+                    android:id="@+id/tv_print_vendor_inn"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/print_settings_print_vendor_inn"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_print_vendor_inn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/save_icon"
+        app:tint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_load"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="125dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/load_icon"
+        app:tint="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_fn_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_fn_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_fn_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_fn_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ofd_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_fn_change">
+
+                <TextView
+                    android:id="@+id/tv_ofd_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_ofd_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_ofd_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_user_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_ofd_change">
+
+                <TextView
+                    android:id="@+id/tv_user_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_user_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_user_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_address_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_user_change">
+
+                <TextView
+                    android:id="@+id/tv_address_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_address_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_address_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_offline_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_address_change">
+
+                <TextView
+                    android:id="@+id/tv_offline_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_offline_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_offline_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_offline_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_offline_off">
+
+                <TextView
+                    android:id="@+id/tv_offline_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_offline_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_offline_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_kkt_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_offline_on">
+
+                <TextView
+                    android:id="@+id/tv_kkt_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_kkt_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_kkt_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_sno_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_kkt_change">
+
+                <TextView
+                    android:id="@+id/tv_sno_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_sno_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_sno_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_machine_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_sno_change">
+
+                <TextView
+                    android:id="@+id/tv_machine_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_machine_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_machine_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_auto_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_machine_change">
+
+                <TextView
+                    android:id="@+id/tv_auto_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_auto_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_auto_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_auto_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_auto_off">
+
+                <TextView
+                    android:id="@+id/tv_auto_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_auto_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_auto_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_bso_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_auto_on">
+
+                <TextView
+                    android:id="@+id/tv_bso_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_bso_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_bso_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_bso_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_bso_off">
+
+                <TextView
+                    android:id="@+id/tv_bso_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_bso_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_bso_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_internet_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_bso_on">
+
+                <TextView
+                    android:id="@+id/tv_internet_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_internet_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_internet_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_internet_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_internet_off">
+
+                <TextView
+                    android:id="@+id/tv_internet_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_internet_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_internet_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_agent_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_internet_on">
+
+                <TextView
+                    android:id="@+id/tv_agent_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_agent_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_agent_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_agent_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_agent_off">
+
+                <TextView
+                    android:id="@+id/tv_agent_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_agent_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_agent_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_gambling_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_agent_on">
+
+                <TextView
+                    android:id="@+id/tv_gambling_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_gambling_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_gambling_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_gambling_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_gambling_off">
+
+                <TextView
+                    android:id="@+id/tv_gambling_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_gambling_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_gambling_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_lottery_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_gambling_on">
+
+                <TextView
+                    android:id="@+id/tv_lottery_off"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_lottery_off"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_lottery_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_lottery_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_lottery_off">
+
+                <TextView
+                    android:id="@+id/tv_lottery_on"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_lottery_on"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_lottery_on"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ffd_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_lottery_on">
+
+                <TextView
+                    android:id="@+id/tv_ffd_change"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_ffd_change"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_ffd_change"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_ffd_change">
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="315dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rereg_reasons_other"
+                    android:textAlignment="textStart"
+                    android:singleLine="true"
+                    android:theme="@style/TextStyle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/cb_other"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </CheckBox>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/exit_icon"
+        app:tint="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_reconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_reconnect"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:text="@string/connection_reconnect"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/cb_reconnect"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </CheckBox>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_kkt_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_reconnect">
+
+            <TextView
+                android:id="@+id/tv_kkt_model"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/connection_kkt_model"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_kkt_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_kkt_model"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_ofd_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_kkt_model">
+
+            <TextView
+                android:id="@+id/tv_ofd_channel"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/connection_odf_channel"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_ofd_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_ofd_channel"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_kkt_connection_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_ofd_channel">
+
+            <TextView
+                android:id="@+id/tv_kkt_connection_type"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/connection_kkt_connection_type"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_kkt_connection_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_kkt_connection_type"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_kkt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_kkt_connection_type">
+
+            <TextView
+                android:id="@+id/tv_kkt"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/connection_kkt"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/et_kkt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="192.168.1.1:5000"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_kkt"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_sep"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_kkt">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_server_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_sep">
+
+            <TextView
+                android:id="@+id/tv_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connection_server_title"
+                android:textAlignment="center"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_server_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_server_title">
+
+            <TextView
+                android:id="@+id/tv_server_url"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/connection_server_url"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_server_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="www.kkt-stat.ru"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_server_url"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_server_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_server_url">
+
+            <TextView
+                android:id="@+id/tv_server_username"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/connection_server_username"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_server_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="user"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_server_username"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_server_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_server_username">
+
+            <TextView
+                android:id="@+id/tv_server_password"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/connection_server_password"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_server_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="userpass"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_server_password"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_server_password">
+
+            <Button
+                android:id="@+id/connect_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/connection_connect"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

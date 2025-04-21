@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cheque_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_cheque_type"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/cheques_cheque_type"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_cheque_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_cheque_type"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cheque_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_cheque_type">
+
+            <TextView
+                android:id="@+id/tv_cheque_tax"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/cheques_cheque_tax"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_cheque_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_cheque_tax"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cheques_buttons1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_cheque_tax">
+
+            <Button
+                android:id="@+id/open_shift_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_open_shift"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+            <Button
+                android:id="@+id/open_cheque_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_open_cheque"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_shift_button">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cheque_sep1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_cheques_buttons1">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cheque_sep1">
+
+            <TextView
+                android:id="@+id/tv_position_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cheques_position_title"
+                android:textAlignment="center"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_title">
+
+            <TextView
+                android:id="@+id/tv_position_name"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_name"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_position_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_name"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_dep_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_name">
+
+            <TextView
+                android:id="@+id/tv_position_dep_number"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_dep_number"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_position_dep_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:inputType="number"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_dep_number"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_dep_number">
+
+            <TextView
+                android:id="@+id/tv_position_count"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_count"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_position_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_count"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_count">
+
+            <TextView
+                android:id="@+id/tv_position_price"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_price"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_position_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_price"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_summ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_price">
+
+            <TextView
+                android:id="@+id/tv_position_summ"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_summ"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/et_position_summ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_summ"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_tax_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_position_summ">
+
+            <TextView
+                android:id="@+id/tv_position_tax_type"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/cheques_position_tax_type"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_position_tax_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_tax_type"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_position_discont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_tax_type">
+
+            <TextView
+                android:id="@+id/tv_position_discont"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_position_discont"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_position_discont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_position_discont"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_reg_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_position_discont">
+
+            <Button
+                android:id="@+id/reg_position_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_position_register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cheque_sep2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_reg_position">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_payment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cheque_sep2">
+
+            <TextView
+                android:id="@+id/tv_payment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cheques_payment_title"
+                android:textAlignment="center"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_payment_summ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_payment_title">
+
+            <TextView
+                android:id="@+id/tv_payment_summ"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cheques_payment_summ"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_payment_summ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_payment_summ"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_payment_summ">
+
+            <TextView
+                android:id="@+id/tv_payment_method"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="@string/cheques_payment_method"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:theme="@style/TextStyle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_payment_method"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Spinner>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_payment_method">
+
+            <Button
+                android:id="@+id/payment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_payment_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cheque_sep3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_payment">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cheques_buttons2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cheque_sep3">
+
+            <Button
+                android:id="@+id/close_cheque_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_close_cheque"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+            <Button
+                android:id="@+id/cancel_cheque_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cheques_cancel_cheque"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/close_cheque_button">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

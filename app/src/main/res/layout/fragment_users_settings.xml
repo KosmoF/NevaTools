@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_cashier1_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier1_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier1_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier1_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier1_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier1_name">
+
+                <TextView
+                    android:id="@+id/tv_cashier1_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier1_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier1_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier1_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier1_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier1_password">
+
+                <TextView
+                    android:id="@+id/tv_cashier1_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier1_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier1_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:maxLength="12"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier1_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier2_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_cashier1_inn">
+
+                <TextView
+                    android:id="@+id/tv_cashier2_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier2_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier2_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier2_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier2_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier2_name">
+
+                <TextView
+                    android:id="@+id/tv_cashier2_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier2_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier2_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier2_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier2_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier2_password">
+
+                <TextView
+                    android:id="@+id/tv_cashier2_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier2_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier2_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier2_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier3_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_cashier2_inn">
+
+                <TextView
+                    android:id="@+id/tv_cashier3_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier3_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier3_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier3_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier3_name">
+
+                <TextView
+                    android:id="@+id/tv_cashier3_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier3_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier3_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier3_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier3_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier3_password">
+
+                <TextView
+                    android:id="@+id/tv_cashier3_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier3_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier3_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier3_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier4_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_cashier3_inn">
+
+                <TextView
+                    android:id="@+id/tv_cashier4_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier4_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier4_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier4_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier4_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier4_name">
+
+                <TextView
+                    android:id="@+id/tv_cashier4_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier4_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier4_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier4_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier4_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier4_password">
+
+                <TextView
+                    android:id="@+id/tv_cashier4_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier4_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier4_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier4_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier5_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_cashier4_inn">
+
+                <TextView
+                    android:id="@+id/tv_cashier5_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier5_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier5_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier5_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier5_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier5_name">
+
+                <TextView
+                    android:id="@+id/tv_cashier5_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier5_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier5_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier5_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_cashier5_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_cashier5_password">
+
+                <TextView
+                    android:id="@+id/tv_cashier5_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_cashier5_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_cashier5_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_cashier5_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_admin_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_cashier5_inn">
+
+                <TextView
+                    android:id="@+id/tv_admin_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_admin_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_admin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_admin_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_admin_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_admin_name">
+
+                <TextView
+                    android:id="@+id/tv_admin_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_admin_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_admin_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_admin_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_admin_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_admin_password">
+
+                <TextView
+                    android:id="@+id/tv_admin_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_admin_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_admin_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:maxLength="12"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_admin_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_system_admin_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_admin_inn">
+
+                <TextView
+                    android:id="@+id/tv_system_admin_name"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_system_admin_name"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_system_admin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ФИО"
+                    android:maxLength="48"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_system_admin_name"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_system_admin_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_system_admin_name">
+
+                <TextView
+                    android:id="@+id/tv_system_admin_password"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_admin_password"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_system_admin_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите пароль"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_system_admin_password"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_system_admin_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:padding="15dp"
+                android:background="@drawable/elem_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_system_admin_password">
+
+                <TextView
+                    android:id="@+id/tv_system_admin_inn"
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/users_settings_system_admin_inn"
+                    android:textAlignment="textStart"
+                    android:theme="@style/TextStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_system_admin_inn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите ИНН"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="235dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_system_admin_inn"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/save_icon"
+        app:tint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_load"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="125dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/load_icon"
+        app:tint="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cashier_fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_cashier_fio"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cashier_fio"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_cashier_fio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите ФИО"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_cashier_fio"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cashier_inn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:padding="15dp"
+            android:background="@drawable/elem_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_cashier_fio">
+
+            <TextView
+                android:id="@+id/tv_cashier_inn"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="@string/cashier_inn"
+                android:textAlignment="textStart"
+                android:theme="@style/TextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_cashier_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите ИНН"
+                android:inputType="number"
+                android:maxLength="12"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="235dp"
+                app:layout_constraintStart_toEndOf="@id/tv_cashier_inn"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </EditText>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cashier_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_cashier_inn">
+
+            <Button
+                android:id="@+id/cashier_save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextStyle"
+                android:text="@string/cashier_save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

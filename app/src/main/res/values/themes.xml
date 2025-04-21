@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NevaTools" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="android:fontFamily">@font/centurygothic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NavigationDrawerStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/centurygothic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavigationHeaderStyle">
+        <item name="android:fontFamily">@font/centurygothic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:fontFamily">@font/centurygothic</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.NevaTools" parent="Base.Theme.NevaTools" />
+</resources>

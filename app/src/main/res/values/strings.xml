@@ -1,0 +1,398 @@
+<resources>
+
+    <!--General-->
+    <string name="app_name">NevaTools</string>
+    <string name="app_version">v 1.39.1</string>
+
+    <!--Menu-->
+    <string name="menu_main">Главная страница</string>
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="menu_connection">Подключение к ККТ</string>
+    <string name="menu_settings">Настройки ККТ</string>
+    <string name="menu_kkt_info">Информация о ККТ</string>
+    <string name="menu_fn_info">Информация о ФН</string>
+    <string name="menu_reg_kkt">Регистрация ККТ</string>
+    <string name="menu_cheques">Чеки</string>
+    <string name="menu_reports">Отчёты</string>
+    <string name="menu_cashier">Ввод данных кассира</string>
+    <string name="menu_km_check">Проверка КМ</string>
+    <string name="menu_service">Служебные функции</string>
+    <string name="menu_test_print">Тестовая печать</string>
+    <string name="menu_fin_ops">Внесения/выплаты</string>
+
+    <!--Main_Fragment-->
+    <string name="main_info_title">Информация</string>
+    <string name="main_driver_version">Версия драйвера:</string>
+    <string name="main_kkt_name">Название ККТ:</string>
+    <string name="main_kkt_serial">Заводской номер ККТ:</string>
+    <string name="main_driver_version_data">Нет подключения</string>
+    <string name="main_kkt_name_data">Нет подключения</string>
+    <string name="main_kkt_serial_data">Нет подключения</string>
+
+    <string name="main_kkt_status_title">Статус ККТ</string>
+    <string name="main_kkt_datetime">Дата и время:</string>
+    <string name="main_kkt_shift_state">Состояние смены:</string>
+    <string name="main_kkt_cap_state">Состояние крышки:</string>
+    <string name="main_kkt_paper_state">Наличие бумаги:</string>
+    <string name="main_kkt_datetime_data">Нет подключения</string>
+    <string name="main_kkt_shift_state_data">Нет подключения</string>
+    <string name="main_kkt_cap_state_data">Нет подключения</string>
+    <string name="main_kkt_paper_state_data">Нет подключения</string>
+    
+    <string name="main_ofd_status_title">Статус обмена с ОФД</string>
+    <string name="main_unsent_docs_count">Кол-во неотправленных док-ов:</string>
+    <string name="main_first_unsent_doc">Первый неотправленный документ:</string>
+    <string name="main_unsent_docs_count_data">Нет подключения</string>
+    <string name="main_first_unsent_doc_data">Нет подключения</string>
+
+    <string name="main_ops_title">Файловые операции:</string>
+    <string name="main_export_logs">Выгрузить логи приложения</string>
+    <string name="main_import_img">Загрузить картинку в память ККТ</string>
+    <string name="main_export_settings">Экспорт настроек</string>
+    <string name="main_import_settings">Импорт настроек</string>
+    <string name="main_clear_imgs">Очистить картинки в памяти ККТ</string>
+    <string name="main_read_stat">Выгрузить статистику по ККТ</string>
+
+    <!--Connection_Fragment-->
+    <string name="connection_reconnect">Автоматически восстанавливать связь:</string>
+    <string name="connection_kkt_model">Модель ККТ:</string>
+    <string name="connection_odf_channel">Канал до ОФД:</string>
+    <string name="connection_kkt_connection_type">Способ связи с ККТ:</string>
+    <string name="connection_kkt">Устройство:</string>
+    <string name="connection_server_title"> Сервер сбора статистики:</string>
+    <string name="connection_server_url">URL:</string>
+    <string name="connection_server_username">Логин:</string>
+    <string name="connection_server_password">Пароль:</string>
+    <string name="connection_connect">Подключиться</string>
+
+    <!--TCPIP_Fragment-->
+    <string name="kkt_ip">IP адрес:</string>
+    <string name="kkt_port">Порт:</string>
+
+    <!--COMVCOM_Fragment-->
+    <string name="kkt_com">Номер COM-порта:</string>
+    <string name="kkt_baudrate">Скорость:</string>
+
+    <!--Settings_Fragment-->
+    <string name="settings_main">1 - Основные</string>
+    <string name="settings_connection">2 - Канал связи</string>
+    <string name="settings_payments">3 - Оплаты</string>
+    <string name="settings_print">5 - Печать</string>
+    <string name="settings_reports">6 - Настройки отчётов</string>
+    <string name="settings_font">7 - Шрифт</string>
+    <string name="settings_users">8 - Пользователи и пароли</string>
+    <string name="settings_cliche">9 - Клише</string>
+    <string name="settings_service_docs">10 - Служебные документы</string>
+    <string name="settings_ofd">15 - ОФД</string>
+    <string name="settings_sections">18 - Секции</string>
+    <string name="settings_diagnostic">19 - Диагностика</string>
+    <string name="settings_km">26 - Работа с КМ</string>
+
+    <!--Main_Settings_Fragment-->
+    <string name="main_settings_kkt_number">Номер ККТ в магазине:</string>
+    <string name="main_settings_encashment">Производить инкассацию:</string>
+    <string name="main_settings_open_cashbox">Открывать ДЯ при закрытии чека:</string>
+    <string name="main_settings_kkt_protocol">Протокол работы ККТ:</string>
+    <string name="main_settings_default_sno">СНО по-умолчанию:</string>
+    <string name="main_settings_payment_method">Способ расчёта по-умолчанию:</string>
+    <string name="main_settings_cash_accounting">Учёт наличности:</string>
+    <string name="main_settings_payment_subject">Предмет расчёта по-умолчанию:</string>
+    <string name="main_settings_cut_method">Способ отрезки док-ов:</string>
+    <string name="main_settings_cut_cheques">Запретить отрезку чеков:</string>
+    <string name="main_settings_cut_reports">Запретить отрезку отчётов</string>
+
+    <!--Connection_Settings_Fragment-->
+    <string name="connection_settings_dhcp_enabled">Получать IP-адрес по DHCP:</string>
+    <string name="connection_settings_kkt_ip">IP-адрес:</string>
+    <string name="connection_settings_kkt_netmask">Маска подсети:</string>
+    <string name="connection_settings_kkt_gateway">Шлюз по-умолчанию:</string>
+
+    <!--Payments_Settings_Fragment-->
+    <string name="payment_setting_payment2_typename">Способ расчёта 2:</string>
+    <string name="payment_setting_payment3_typename">Способ расчёта 3:</string>
+    <string name="payment_setting_payment4_typename">Способ расчёта 4:</string>
+    <string name="payment_setting_payment5_typename">Способ расчёта 5:</string>
+    <string name="payment_setting_payment6_typename">Способ расчёта 6:</string>
+    <string name="payment_setting_payment7_typename">Способ расчёта 7:</string>
+    <string name="payment_setting_payment8_typename">Способ расчёта 8:</string>
+
+    <string name="payment_setting_payment2_type">Номер формы расчёта 2:</string>
+    <string name="payment_setting_payment3_type">Номер формы расчёта 3:</string>
+    <string name="payment_setting_payment4_type">Номер формы расчёта 4:</string>
+    <string name="payment_setting_payment5_type">Номер формы расчёта 5:</string>
+    <string name="payment_setting_payment6_type">Номер формы расчёта 6:</string>
+    <string name="payment_setting_payment7_type">Номер формы расчёта 7:</string>
+    <string name="payment_setting_payment8_type">Номер формы расчёта 8:</string>
+
+    <!--Print_Settings_Fragment-->
+    <string name="print_settings_allow_printing">Разрешить команду \"Печать строки\":</string>
+    <string name="print_settings_qr_correction">Уровень коррекции QR-кода:</string>
+    <string name="print_settings_print_kkt_number">Печатать номер ККТ в магазине:</string>
+    <string name="print_settings_print_full_payment">Печатать \"Полный расчёт\":</string>
+    <string name="print_settings_print_payment_subject">Печатать признак предмета расчёта:</string>
+    <string name="print_settings_print_ofd_name">Печатать \"Наименование ОФД\":</string>
+    <string name="print_settings_print_email">Печатать \"E-mail отправителя\":</string>
+    <string name="print_settings_print_vendor_inn">Печатать \"ИНН поставщика\":</string>
+
+    <!--Reports_Settings_Fragment-->
+    <string name="reports_settings_print_cheques_count">Печатать информацию о кол-ве чеков за смену по типам операций:</string>
+    <string name="reports_settings_print_splits">Печатать разделители в суточных отчётах:</string>
+    <string name="reports_settings_print_taxes">Печатать налоги в X и Z отчётах:</string>
+    <string name="reports_settings_print_null_taxes">Печатать нулевые налоги</string>
+    <string name="reports_settings_print_profitloss_summ">Печатать необ. сумму приходов и расходов:</string>
+    <string name="reports_settings_print_profit_return">Печатать необ. сумму возвратов приходов:</string>
+    <string name="reports_settings_print_loss_return">Печатать необ. сумму возвратов расходов:</string>
+    <string name="reports_settings_print_extra_blocks">Не печатать блоки “приход”,“расход”,”возврат”:</string>
+    <string name="reports_settings_print_null_summ">Не печатать нулевые суммы:</string>
+    <string name="reports_settings_print_z_report">Не печатать Z-отчёт при закрытии смены:</string>
+    <string name="reports_settings_print_summ_profit">Печатать необ. сумму по способам расчёта прихода:</string>
+    <string name="reports_settings_print_summ_loss">Печатать необ. сумму по способам расчёта расхода:</string>
+
+    <!--Font_Settings_Fragment-->
+    <string name="font_settings_cheque_pattern">Шаблон чека:</string>
+    <string name="font_settings_line_split">Междустрочный интервал:</string>
+    <string name="font_settings_font_size">Шрифт:</string>
+    <string name="font_settings_symbols_count">Кол-во символов в строке:</string>
+
+    <!--Users_Settings_Fragment-->
+    <string name="users_settings_cashier1_name">ФИО кассира 1:</string>
+    <string name="users_settings_cashier1_password">Пароль кассира 1:</string>
+    <string name="users_settings_cashier1_inn">ИНН кассира 1:</string>
+    <string name="users_settings_cashier2_name">ФИО кассира 2:</string>
+    <string name="users_settings_cashier2_password">Пароль кассира 2:</string>
+    <string name="users_settings_cashier2_inn">ИНН кассира 2:</string>
+    <string name="users_settings_cashier3_name">ФИО кассира 3:</string>
+    <string name="users_settings_cashier3_password">Пароль кассира 3:</string>
+    <string name="users_settings_cashier3_inn">ИНН кассира 3:</string>
+    <string name="users_settings_cashier4_name">ФИО кассира 4:</string>
+    <string name="users_settings_cashier4_password">Пароль кассира 4:</string>
+    <string name="users_settings_cashier4_inn">ИНН кассира 4:</string>
+    <string name="users_settings_cashier5_name">ФИО кассира 5:</string>
+    <string name="users_settings_cashier5_password">Пароль кассира 5:</string>
+    <string name="users_settings_cashier5_inn">ИНН кассира 5:</string>
+    <string name="users_settings_admin_name">ФИО администратора</string>
+    <string name="users_settings_admin_password">Пароль администратора</string>
+    <string name="users_settings_admin_inn">ИНН администратора</string>
+    <string name="users_settings_system_admin_name">ФИО системного администратора</string>
+    <string name="users_settings_system_admin_password">Пароль системного администратора</string>
+    <string name="users_settings_system_admin_inn">ИНН системного администратора</string>
+
+    <!--Cliche_Settings_Fragment-->
+    <string name="cliche_settings_footer_size">Кол-во строк после чека:</string>
+    <string name="cliche_settings_header_size">Кол-во строк заголовка:</string>
+    <string name="cliche_settings_cutter_distance1">Расстояние от ТПГ до отрезного ножа:</string>
+    <string name="cliche_settings_cliche_autoprint">Не печатать клише автоматически:</string>
+    <string name="cliche_settings_cliche_autocut">Отрезать ЧЛ после печати клише:</string>
+    <string name="cliche_settings_cutter_distance2">Расстояние от ножа до гребёнки:</string>
+    <string name="cliche_settings_cliche_text">Текст клише:</string>
+
+    <!--Service_Docs_Settings_Fragment-->
+    <string name="service_docs_settings_print_ready_doc">Печатать документ готовности к работе:</string>
+    <string name="service_docs_settings_print_cliche">Печатать клише в служебных сообщениях:</string>
+    <string name="service_docs_settings_print_set_datetime_doc">Печатать сообщение о вводе даты и времени:</string>
+    <string name="service_docs_settings_print_getIP_doc">Печатать сообщение о полученном IP-адресе:</string>
+
+    <!--OFD_Settings_Fragment-->
+    <string name="ofd_settings_ofd_address">Адрес:</string>
+    <string name="ofd_settings_ofd_port">Порт:</string>
+    <string name="ofd_settings_ofd_dns">DNS:</string>
+    <string name="ofd_settings_ofd_channel">Канал обмена:</string>
+
+    <!--Sections_Settings_Fragment-->
+    <string name="sections_settings_section1_name">Название секции 1:</string>
+    <string name="sections_settings_section2_name">Название секции 2:</string>
+    <string name="sections_settings_section3_name">Название секции 3:</string>
+    <string name="sections_settings_section4_name">Название секции 4:</string>
+    <string name="sections_settings_section5_name">Название секции 5:</string>
+
+    <string name="sections_settings_section1_tax">Номер налога 1:</string>
+    <string name="sections_settings_section2_tax">Номер налога 2:</string>
+    <string name="sections_settings_section3_tax">Номер налога 3:</string>
+    <string name="sections_settings_section4_tax">Номер налога 4:</string>
+    <string name="sections_settings_section5_tax">Номер налога 5:</string>
+
+    <!--Diagnostic_Settings_Fragment-->
+    <string name="diagnostic_settings_lk_address">Адрес ЛК:</string>
+    <string name="diagnostic_settings_lk_port">Порт ЛК:</string>
+    <string name="diagnostic_settings_msg_interval">Интервал диагностических сообщений:</string>
+    <string name="diagnostic_settings_user_code">Код привязки пользователя:</string>
+
+    <!--OFD_Settings_Fragment-->
+    <string name="km_settings_ism_address">Адрес ИСМ:</string>
+    <string name="km_settings_ism_port">Порт ИСМ:</string>
+    <string name="km_settings_okp_address">Адрес ОКП:</string>
+    <string name="km_settings_okp_port">Порт ОКП:</string>
+
+    <!--KKT_Info_Fragment-->
+    <string name="kkt_info_request_type">Тип запроса:</string>
+    <string name="kkt_info_cheque_type">Тип чека:</string>
+    <string name="kkt_info_payment_type">Тип оплаты:</string>
+    <string name="kkt_info_tax_type">Ставка налога:</string>
+    <string name="kkt_info_img_number">Номер картинки:</string>
+    <string name="kkt_info_read_info">Прочитать</string>
+    <string name="kkt_info_result">Результат:</string>
+
+    <!--FN_Info_Fragment-->
+    <string name="fn_info_request_type">Тип запроса:</string>
+    <string name="fn_info_doc_number">Номер документа:</string>
+    <string name="fn_info_read_info">Прочитать</string>
+    <string name="fn_info_result">Результат:</string>
+
+    <!--KKT_Registration_Fragment-->
+    <string name="kkt_reg_number">Рег. номер ККТ</string>
+    <string name="kkt_reg_rereg_reason">Причина перерегистрации:</string>
+
+    <string name="kkt_reg_org_requisites_title">Реквизиты организации:</string>
+    <string name="kkt_reg_org_name">Наименование:</string>
+    <string name="kkt_reg_org_inn">ИНН:</string>
+    <string name="kkt_reg_org_address">Адрес расчётов:</string>
+    <string name="kkt_reg_org_place">Место расчётов:</string>
+    <string name="kkt_reg_org_email">E-mail:</string>
+
+    <string name="kkt_reg_tax_systems_title">Системы налогооблажения:</string>
+    <string name="kkt_reg_osn_tax">ОСН</string>
+    <string name="kkt_reg_usn1_tax">УСН доход</string>
+    <string name="kkt_reg_usn2_tax">УСН доход-расход</string>
+    <string name="kkt_reg_eshn_tax">ЕСХН</string>
+    <string name="kkt_reg_patent_tax">Патент</string>
+    <string name="kkt_reg_default_tax">По-умолчанию:</string>
+    
+    <string name="kkt_reg_params_title">Параметры регистрации:</string>
+    <string name="kkt_reg_offline_mode">Автономный режим</string>
+    <string name="kkt_reg_auto_mode">Автоматический режим</string>
+    <string name="kkt_reg_machine_number">Номер автомата:</string>
+    <string name="kkt_reg_data_encryption">Шифрование данных</string>
+
+    <string name="kkt_reg_machine_installation">Установка в автомате</string>
+    <string name="kkt_reg_internet_payments_only">Расчёты только в Internet</string>
+    <string name="kkt_reg_marked_goods">Торговля маркированными товарами</string>
+    <string name="kkt_reg_gambling_mode">Проведение азартных игр</string>
+    <string name="kkt_reg_pawn_business">Ломбардная деятельность</string>
+    <string name="kkt_reg_vending_machine">Установка в вендинговом аппарате</string>
+    <string name="kkt_reg_wholesale_trade">Оптовая торговля</string>
+    <string name="kkt_reg_bso_only">Только БСО</string>
+    <string name="kkt_reg_excise_duty">Продажа подакцизного товара</string>
+    <string name="kkt_reg_service_payment">Расчёты за услуги</string>
+    <string name="kkt_reg_lottery_mode">Проведение лотерей</string>
+    <string name="kkt_reg_insurance_business">Страховая деятельность</string>
+    <string name="kkt_reg_catering_service">Услуги общественного питания</string>
+
+    <string name="kkt_reg_ffd_version">Версия ФФД</string>
+    <string name="kkt_reg_fns_address">Адрес сайта ФНС</string>
+
+    <string name="kkt_reg_ofd_title">Оператор фискальных данных:</string>
+    <string name="kkt_reg_ofd_name">Наименование:</string>
+    <string name="kkt_reg_ofd_inn">ИНН:</string>
+
+    <string name="kkt_reg_functions_title">Функции:</string>
+    <string name="kkt_reg_number_button">Рассчитать регистрационный номер</string>
+    <string name="kkt_reg_button">Регистрация</string>
+    <string name="kkt_rereg_button">Перерегистрация</string>
+
+    <!--Rereg_Reasons_Fragment-->
+    <string name="rereg_reasons_fn_change">Замена ФН</string>
+    <string name="rereg_reasons_ofd_change">Замена ОФД</string>
+    <string name="rereg_reasons_user_change">Изменение наименования пользователя ККТ</string>
+    <string name="rereg_reasons_address_change">Изменение адреса или места установки ККТ</string>
+    <string name="rereg_reasons_offline_off">Откл. автономного режима</string>
+    <string name="rereg_reasons_offline_on">Вкл. автономного режима</string>
+    <string name="rereg_reasons_kkt_change">Измененение версии модели ККТ</string>
+    <string name="rereg_reasons_sno_change">Изменение перечня СНО</string>
+    <string name="rereg_reasons_machine_change">Изменение номера автомата</string>
+    <string name="rereg_reasons_auto_off">Откл. автоматического режима</string>
+    <string name="rereg_reasons_auto_on">Вкл. автоматического режима</string>
+    <string name="rereg_reasons_bso_off">Откл. режима формирования БСО</string>
+    <string name="rereg_reasons_bso_on">Вкл. режима формирования БСО</string>
+    <string name="rereg_reasons_internet_off">Откл. режима расчётов в сети Internet</string>
+    <string name="rereg_reasons_internet_on">Вкл. режима расчётов в сети Internet</string>
+    <string name="rereg_reasons_agent_off">Откл. режима платёжного и банковского агента</string>
+    <string name="rereg_reasons_agent_on">Вкл. режима платёжного и банковского агента</string>
+    <string name="rereg_reasons_gambling_off">Откл. режима проведения азартных игр</string>
+    <string name="rereg_reasons_gambling_on">Вкл. режима проведения азартных игр</string>
+    <string name="rereg_reasons_lottery_off">Откл. режима проведения лотереи</string>
+    <string name="rereg_reasons_lottery_on">Вкл. режима проведения лотереи</string>
+    <string name="rereg_reasons_ffd_change">Изменение версии ФФД</string>
+    <string name="rereg_reasons_other">Иные причины</string>
+
+    <!--Cheques_Fragment-->
+    <string name="cheques_cheque_type">Тип чека:</string>
+    <string name="cheques_cheque_tax">СНО:</string>
+    <string name="cheques_open_shift">Открыть смену</string>
+    <string name="cheques_open_cheque">Открыть чек</string>
+
+    <string name="cheques_position_title">Позиции:</string>
+    <string name="cheques_position_name">Предмет расчёта:</string>
+    <string name="cheques_position_dep_number">Номер отдела:</string>
+    <string name="cheques_position_count">Кол-во:</string>
+    <string name="cheques_position_price">Цена:</string>
+    <string name="cheques_position_summ">Сумма:</string>
+    <string name="cheques_position_tax_type">НДС:</string>
+    <string name="cheques_position_discont">Инф. скидка/надбавка:</string>
+    <string name="cheques_position_payment_type">Способ расчёта:</string>
+    <string name="cheques_position_register">Регистрация позиции</string>
+
+    <string name="cheques_payment_title">Оплата:</string>
+    <string name="cheques_payment_summ">Сумма:</string>
+    <string name="cheques_payment_method">Способ оплаты:</string>
+    <string name="cheques_payment_button">Оплата</string>
+
+    <string name="cheques_close_cheque">Закрыть чек</string>
+    <string name="cheques_cancel_cheque">Отменить чек</string>
+
+    <!--Reports_Fragment-->
+    <string name="reports_report_type">Тип отчёта:</string>
+    <string name="reports_doc_number">Номер документа из ФН:</string>
+    <string name="reports_do_not_print">Не печатать отчёт:</string>
+    <string name="reports_make_report">Сформировать отчёт</string>
+    <string name="reports_result">Результат:</string>
+
+    <!--Cashiers_Fragment-->
+    <string name="cashier_fio">ФИО кассира:</string>
+    <string name="cashier_inn">ИНН кассира:</string>
+    <string name="cashier_save">Сохранить</string>
+
+    <!--KM_Check_Fragment-->
+    <string name="km_check_km_text">Поле ввода КМ:</string>
+    <string name="km_check_km_type">Представление КМ:</string>
+    <string name="km_check_send">Начать проверку</string>
+    <string name="km_check_accept">Принять КМ</string>
+    <string name="km_check_reject">Отказаться от КМ</string>
+    <string name="km_check_result">Результат:</string>
+
+    <!--Service_Fragment-->
+    <string name="service_datetime_title">Дата и время:</string>
+    <string name="service_datetime_text">Дата и время:</string>
+    <string name="service_get_datetime">Прочитать из ККТ</string>
+    <string name="service_set_datetime">Установить дату и время</string>
+    
+    <string name="service_functions_title">Другие функции:</string>
+    <string name="service_beep">Звуковой сигнал</string>
+    <string name="service_cut_tape">Отрезать ЧЛ</string>
+    <string name="service_open_cashbox">Открыть ДЯ</string>
+    <string name="service_rewind_tape">Промотать ЧЛ</string>
+    <string name="service_reboot_kkt">Перезагрузить ККТ</string>
+
+    <!--Test_Print_Fragment-->
+    <string name="test_print_text_title">Текст, клише:</string>
+    <string name="test_print_text_to_print">Текст для печати:</string>
+    <string name="test_print_text_button">Печать текста</string>
+    <string name="test_print_cliche_button">Печать клише</string>
+
+    <string name="test_print_barcode_title">Штрихкод:</string>
+    <string name="test_print_barcode_text">Штрихкод:</string>
+    <string name="test_print_barcode_type">Тип штрихкода:</string>
+    <string name="test_print_barcode_button">Печать штрихкода</string>
+
+    <string name="test_print_image_title">Картинка:</string>
+    <string name="test_print_image_number">Номер картинки в ККТ:</string>
+    <string name="test_print_image_button">Печать картинки</string>
+
+    <!--Fin_Ops_Fragment-->
+    <string name="fin_ops_summ">Сумма внесения, р:</string>
+    <string name="fin_ops_do_not_print">Не печатать отчёт:</string>
+    <string name="fin_ops_deposit">Внесение</string>
+    <string name="fin_ops_payment">Выплата</string>
+    <string name="fin_ops_result">Результат:</string>
+
+</resources>
